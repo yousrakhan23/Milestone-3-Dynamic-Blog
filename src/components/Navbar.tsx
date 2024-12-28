@@ -20,43 +20,32 @@ const rubikVinyl = Rubik_Vinyl({
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-50  bg-[#181A2A]">
-      <div className="flex items-center justify-between py-4 px-8 md:px-16">
+    <header className="sticky top-0 z-50 bg-[#181A2A]">
+      <div className="flex items-center justify-between py-4 px-4 sm:px-8 md:px-16">
         {/* Logo */}
         <div className="flex items-center">
           <Image
             src="../images/brand_logo.svg"
             alt="logo"
+            layout="intrinsic"
             width={158}
             height={36}
-            className="cursor-pointer"
+            className="cursor-pointer w-32 sm:w-36 md:w-40 lg:w-48"
           />
         </div>
 
         {/* Navigation Links */}
-        <nav className={`${rubikVinyl.className} hidden md:flex space-x-8 text-xl`}>
-          <Link
-            href="/Blog"
-            className="text-[#F2AE66]  transition"
-          >
+        <nav className={`${rubikVinyl.className} hidden md:flex space-x-4 lg:space-x-8 text-lg lg:text-xl`}>
+          <Link href="/Blog" className="text-[#F2AE66] transition">
             Blog
           </Link>
-          <Link
-            href="/"
-            className="text-[#F2AE66]  transition"
-          >
+          <Link href="/" className="text-[#F2AE66] transition">
             Home
           </Link>
-          <Link
-            href="/About"
-            className="text-[#F2AE66]  transition"
-          >
+          <Link href="/About" className="text-[#F2AE66] transition">
             About
           </Link>
-          <Link
-            href="/Contact"
-            className="text-[#F2AE66]  transition"
-          >
+          <Link href="/Contact" className="text-[#F2AE66] transition">
             Contact
           </Link>
         </nav>
@@ -80,7 +69,7 @@ const Navbar = () => {
                 viewBox="0 -960 960 960"
                 width="30px"
                 fill="white"
-                className="block ml-[22rem]"
+                className="ml-auto"
               >
                 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
               </svg>
@@ -88,7 +77,7 @@ const Navbar = () => {
             <SheetContent>
               <SheetHeader>
                 <SheetTitle>
-                  <div className="py-[5rem] px-[2rem]">
+                  <div className="py-20 px-8">
                     <Input
                       type="search"
                       placeholder="Search"
@@ -97,19 +86,17 @@ const Navbar = () => {
                   </div>
                 </SheetTitle>
                 <SheetDescription>
-                  <nav
-                    className={`${rubikVinyl.className} space-y-4 text-center text-[#F2AE66] text-xl transition`}
-                  >
-                    <Link href="/blog" className="block">
+                  <nav className={`${rubikVinyl.className} space-y-4 text-center text-[#F2AE66] text-lg`}>
+                    <Link href="/Blog" className="block">
                       Blog
                     </Link>
-                    <Link href="/home" className="block">
+                    <Link href="/" className="block">
                       Home
                     </Link>
-                    <Link href="/about" className="block">
+                    <Link href="/About" className="block">
                       About
                     </Link>
-                    <Link href="/contact" className="block">
+                    <Link href="/Contact" className="block">
                       Contact
                     </Link>
                   </nav>
