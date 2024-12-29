@@ -1,30 +1,48 @@
 import React from "react";
 import Image from "next/image";
-
-const HeroSection = () => {
+import Blog from "@/app/Blog/page";
+export default function HeroSection() {
   return (
-    <div className="relative flex justify-center">
-      {/* First Image */}
-      <Image
-        src="../images/hero_section_image.svg"
-        alt="hero section"
-        width={1216}
-        height={500}
-        className="rounded-[12px] m-9"
-      />
+    <div>
+      <div className="relative  text-white h-screen flex items-center justify-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 justify-center items-center flex">
+          <Image
+            src="/images/hero_section_image.svg"
+            alt="hero section"
+            width={1216}
+            height={500}
+            className="rounded-[12px] mx-auto object-cover shadow-2xl "
+          />
+        </div>
+        <div className="absolute inset-0 "></div>
 
-      {/* Second Image */}
-      <div className="absolute top-1/2 transform -translate-y-1/2 mt-[14rem] mr-[25rem] ">
-        <Image
-          src="../images/hero_sec_content.svg"
-          alt="hero section content"
-          width={598}
-          height={304}
-          className="shadow-lg"
-        />
+        {/* Card Section */}
+        <div className="relative max-w-6xl mx-auto p-6">
+          <div className="absolute top-8 right-8 bg-[#181A2A] rounded-lg shadow-lg p-6 w-96">
+            <div className="mb-4 text-sm font-medium text-blue-500">
+              Technology
+            </div>
+            <h2 className="text-2xl font-bold leading-tight mb-4">
+              The Impact of Technology on the Workplace: How Technology is
+              Changing
+            </h2>
+            <div className="flex items-center space-x-2 text-sm">
+              <Image
+                src="../images/content_person1.svg"
+                alt="visitor"
+                className="w-8 h-8 rounded-full"
+                width={32}
+                height={32}
+              />
+              <span>Jason Francisco</span>
+              <span>•</span>
+              <span>August 20, 2022</span>
+            </div>
+          </div>
+        </div>
       </div>
+      <div><Blog /></div>
     </div>
   );
-};
-
-export default HeroSection;
+}

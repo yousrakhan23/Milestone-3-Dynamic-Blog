@@ -22,7 +22,7 @@ export default function Services() {
                 <h2 className="text-white text-xl title-font mb-3 font-semibold">
                   Web Development
                 </h2>
-                <p className="leading-relaxed text-base text-black">
+                <p className="leading-relaxed text-base text-[#F2AE66]">
                 Transform your ideas into dynamic, responsive websites! With expertise in HTML, CSS, JavaScript, React, and Next.js, I create modern, high-quality web solutions tailored to meet your business needs. Lets bring your vision to life..!!
                 </p>
               </div>
@@ -36,7 +36,7 @@ export default function Services() {
                 <h2 className="text-white text-xl title-font mb-3 font-semibold">
                   Web Design
                 </h2>
-                <p className="leading-relaxed text-base text-black">
+                <p className="leading-relaxed text-base text-[#F2AE66]">
                 Elevate your online presence with stunning, user-friendly designs! I specialize in creating visually captivating, responsive websites that engage and inspire. Lets design a digital experience that makes a lasting impression..!!
                 </p>
               </div>
@@ -50,7 +50,7 @@ export default function Services() {
                 <h2 className="text-white text-xl title-font mb-3 font-semibold">
                   Responsive Web Design
                 </h2>
-                <p className="leading-relaxed text-base text-black">
+                <p className="leading-relaxed text-base text-[#F2AE66]">
                 Unlock the power of responsive design! I create seamless, adaptive websites that look and function beautifully on any device. Lets make your digital presence accessible, engaging, and ready for every screen size..!!
                 </p>
               </div>

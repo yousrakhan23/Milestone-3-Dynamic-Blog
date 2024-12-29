@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import myProfile from "../../../public/images/mine.jpg";
+import myProfile from "../../../public/images/mine2.jpg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { Rubik_Vinyl } from "next/font/google";

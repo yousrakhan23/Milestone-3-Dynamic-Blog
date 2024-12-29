@@ -1,6 +1,7 @@
 import React from "react";
 import { Rubik_Vinyl } from "next/font/google";
 
+
 const rubikVinyl = Rubik_Vinyl({
   weight: "400",
   subsets: ["latin"],
@@ -79,6 +80,7 @@ const ContactForm = () => {
           </div>
         </form>
       </div>
+      
     </section>
   );
 };
