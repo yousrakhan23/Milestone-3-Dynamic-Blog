@@ -15,15 +15,18 @@ const CommentSection = () => {
 
   const handleAddComment = () => {
     if (newComment.trim()) {
-      setComments([
-        ...comments,
-        {
-          id: Date.now(),
-          user: "Yousra Khan", 
-          text: newComment,
-          timestamp: new Date().toLocaleString(),
-        },
-      ]);
+      const userName = prompt("Please enter your name:");
+      if (userName) {
+        setComments([
+          ...comments,
+          {
+            id: Date.now(),
+            user: userName,
+            text: newComment,
+            timestamp: new Date().toLocaleString(),
+          },
+        ]);
+      }
       setNewComment("");
     }
   };
@@ -41,7 +44,7 @@ const CommentSection = () => {
           value={newComment}
           onChange={(e) => setNewComment(e.target.value)}
           placeholder="Add a comment..."
-          className="w-full p-3 border border-[#F2AE66] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full p-3 border border-[#F2AE66] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 bg-[#F2AE66]"
           rows={4}
         ></textarea>
         <button
@@ -57,7 +60,7 @@ const CommentSection = () => {
         {comments.map((comment) => (
           <div
             key={comment.id}
-            className="p-4 bg-gray-100 rounded-md shadow-md"
+            className="p-4 bg-slate-400 rounded-md shadow-md"
           >
             <div className="flex justify-between items-center mb-2">
               <span className="text-sm font-semibold text-gray-800">
